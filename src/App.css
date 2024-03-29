@@ -1,38 +1,242 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  padding: 100px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: [left] 365px [center] 305px [right] 365px;
+  grid-template-rows: [top] 365px [middle] 305px [bottom] 365px;
+  gap: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.northLanes {
+  grid-column: center;
+  grid-row: top;
+  height: 365px;
+  width: 305px;
+  display: grid;
+  grid-template-columns: [sb-right-turn] 35px [sb-right-straight] 35px [sb-left-straight] 35px [sb-left-turn] 35px [nb-straight-1] 35px [nb-straight-2] 35px [nb-none] 35px;
+  grid-template-rows: [sb-car-4] 65px [sb-car-3] 65px [sb-car-2] 65px [sb-car-1] 65px [sb-car-0] 65px;
+  gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sb-right-turn {
+  grid-column: sb-right-turn;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sb-right-straight {
+  grid-column: sb-right-straight;
 }
 
-.App-link {
-  color: #61dafb;
+.sb-left-straight {
+  grid-column: sb-left-straight;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sb-left-turn {
+  grid-column: sb-left-turn;
+}
+
+.nb-straight-1 {
+  grid-column: nb-straight-1;
+}
+
+.nb-straight-2 {
+  grid-column: nb-straight-2;
+}
+
+.sb-car-4 {
+  grid-row: sb-car-4;
+}
+
+.sb-car-3 {
+  grid-row: sb-car-3;
+}
+
+.sb-car-2 {
+  grid-row: sb-car-2;
+}
+
+.sb-car-1 {
+  grid-row: sb-car-1;
+}
+
+.sb-car-0 {
+  grid-row: sb-car-0;
+}
+
+.eastLanes {
+  grid-column: right;
+  grid-row: middle;
+  height: 305px;
+  width: 365px;
+  display: grid;
+  grid-template-columns: [wb-car-0] 65px [wb-car-1] 65px [wb-car-2] 65px [wb-car-3] 65px [wb-car-4] 65px;
+  grid-template-rows: [wb-right-turn] 35px [wb-right-straight] 35px [wb-left-straight] 35px [wb-left-turn] 35px [eb-straight-1] 35px [eb-straight-2] 35px [eb-none] 35px;
+  gap: 10px;
+}
+
+.wb-right-turn {
+  grid-row: wb-right-turn;
+}
+
+.wb-right-straight {
+  grid-row: wb-right-straight;
+}
+
+.wb-left-straight {
+  grid-row: wb-left-straight;
+}
+
+.wb-left-turn {
+  grid-row: wb-left-turn;
+}
+
+.eb-straight-1 {
+  grid-row: eb-straight-1;
+}
+
+.eb-straight-2 {
+  grid-row: eb-straight-2;
+}
+
+.wb-car-4 {
+  grid-column: wb-car-4;
+}
+
+.wb-car-3 {
+  grid-column: wb-car-3;
+}
+
+.wb-car-2 {
+  grid-column: wb-car-2;
+}
+
+.wb-car-1 {
+  grid-column: wb-car-1;
+}
+
+.wb-car-0 {
+  grid-column: wb-car-0;
+}
+
+.southLanes {
+  grid-column: center;
+  grid-row: bottom;
+  height: 365px;
+  width: 305px;
+  display: grid;
+  grid-template-columns: [sb-none] 35px [sb-straight-1] 35px [sb-straight-2] 35px [nb-left-turn] 35px [nb-left-straight] 35px [nb-right-straight] 35px [nb-right-turn] 35px ;
+  grid-template-rows: [nb-car-0] 65px [nb-car-1] 65px [nb-car-2] 65px [nb-car-3] 65px [nb-car-4] 65px;
+  gap: 10px;
+}
+
+.nb-right-turn {
+  grid-column: nb-right-turn;
+}
+
+.nb-right-straight {
+  grid-column: nb-right-straight;
+}
+
+.nb-left-straight {
+  grid-column: nb-left-straight;
+}
+
+.nb-left-turn {
+  grid-column: nb-left-turn;
+}
+
+.sb-straight-1 {
+  grid-column: sb-straight-1;
+}
+
+.sb-straight-2 {
+  grid-column: sb-straight-2;
+}
+
+.nb-car-4 {
+  grid-row: nb-car-4;
+}
+
+.nb-car-3 {
+  grid-row: nb-car-3;
+}
+
+.nb-car-2 {
+  grid-row: nb-car-2;
+}
+
+.nb-car-1 {
+  grid-row: nb-car-1;
+}
+
+.nb-car-0 {
+  grid-row: nb-car-0;
+}
+
+.westLanes {
+  grid-column: left;
+  grid-row: middle;
+  height: 305px;
+  width: 365px;
+  display: grid;
+  grid-template-columns: [eb-car-4] 65px [eb-car-3] 65px [eb-car-2] 65px [eb-car-1] 65px [eb-car-0] 65px;
+  grid-template-rows: [wb-none] 35px [wb-straight-1] 35px [wb-straight-2] 35px [eb-left-turn] 35px [eb-left-straight] 35px [eb-right-straight] 35px [eb-right-turn] 35px ;
+  gap: 10px;
+}
+
+.eb-right-turn {
+  grid-row: eb-right-turn;
+}
+
+.eb-right-straight {
+  grid-row: eb-right-straight;
+}
+
+.eb-left-straight {
+  grid-row: eb-left-straight;
+}
+
+.eb-left-turn {
+  grid-row: eb-left-turn;
+}
+
+.wb-straight-1 {
+  grid-row: wb-straight-1;
+}
+
+.wb-straight-2 {
+  grid-row: wb-straight-2;
+}
+
+.eb-car-4 {
+  grid-column: eb-car-4;
+}
+
+.eb-car-3 {
+  grid-column: eb-car-3;
+}
+
+.eb-car-2 {
+  grid-column: eb-car-2;
+}
+
+.eb-car-1 {
+  grid-column: eb-car-1;
+}
+
+.eb-car-0 {
+  grid-column: eb-car-0;
+}
+
+.stoplights {
+  height: 305px;
+  width: 305px;
+  grid-column: center;
+  grid-row: middle;
+  border: 1px black solid;
+  display: grid;
+  grid-template-columns: repeat(7, 35px [col]);
+  grid-template-rows: repeat(7, 35px [row]);
+  gap: 10px;
 }

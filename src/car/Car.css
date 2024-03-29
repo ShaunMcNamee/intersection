@@ -1,0 +1,23 @@
+.car {
+    width: 60px;
+}
+
+.east {
+
+}
+
+.south {
+    rotate: 90deg;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+.west {
+    rotate: 180deg;
+}
+
+.north {
+    rotate: 270deg;
+    margin-top: 20px;
+    margin-left: -15px;
+}

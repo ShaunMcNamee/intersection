@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Lanes from './lanes/Lanes'
+import Stoplight from './stoplight/Stoplight'
+
+const exampleData = {
+  lanes: {
+    northLanes: {
+      rt: [{ id: 123, color: 'white' }, {}, {}, {}, {}],
+      rs: [{}, {}, {}, {}, {}],
+      ls: [{}, {}, {}, {}, {}],
+      lt: [{}, {}, {}, {}, {}],
+      s1: [{}, {}, {}, {}, { id: 1231, color: 'blue' }],
+      s2: [{}, {}, {}, {}, {}],
+    },
+    eastLanes: {
+      rt: [{}, { id: 1234, color: 'lime' }, {}, {}, {}],
+      rs: [{}, {}, {}, {}, {}],
+      ls: [{}, {}, {}, {}, {}],
+      lt: [{}, {}, {}, {}, {}],
+      s1: [{}, {}, {}, {}, {}],
+      s2: [{}, {}, {}, {}, {}],
+    },
+    southLanes: {
+      rt: [{}, {}, { id: 1235, color: 'white' }, {}, {}],
+      rs: [{}, {}, {}, {}, {}],
+      ls: [{}, {}, {}, {}, {}],
+      lt: [{}, {}, {}, {}, {}],
+      s1: [{}, {}, {}, {}, {}],
+      s2: [{}, {}, {}, {}, {}],
+    },
+    westLanes: {
+      rt: [{}, {}, {}, { id: 1236, color: 'white' }, {}],
+      rs: [{}, {}, {}, {}, {}],
+      ls: [{}, {}, {}, {}, {}],
+      lt: [{}, {}, {}, {}, {}],
+      s1: [{}, {}, {}, {}, {}],
+      s2: [{}, {}, {}, {}, {}],
+    },
+  },
+  stoplight: {
+    north: ['orange', 'red', 'red', 'red'],
+    east: ['red', 'red', 'red', 'red'],
+    south: ['red', 'red', 'green', 'red'],
+    west: ['red', 'red', 'red', 'red'],
+  },
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Lanes laneData={exampleData.lanes} />
+      <Stoplight stoplightData={exampleData.stoplight} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
