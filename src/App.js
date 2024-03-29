@@ -1,6 +1,7 @@
 import './App.css'
 import Lanes from './lanes/Lanes'
 import Stoplight from './stoplight/Stoplight'
+import useCarsMove from './useCarsMove/useCarsMove'
 
 const exampleData = {
   lanes: {
@@ -46,10 +47,13 @@ const exampleData = {
 }
 
 function App() {
+  const data = useCarsMove()
+  console.log(data)
+
   return (
     <div className="App">
       <Lanes laneData={exampleData.lanes} />
-      <Stoplight stoplightData={exampleData.stoplight} />
+      <Stoplight stoplightData={data.stoplight} />
     </div>
   )
 }

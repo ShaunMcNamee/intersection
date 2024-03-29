@@ -3,7 +3,6 @@ import lime from '../images/lime.png'
 import green from '../images/green.png'
 import white from '../images/white.png'
 import orange from '../images/orange.png'
-import none from '../images/none.png'
 import './Car.css'
 
 const Car = ({ color, direction, className }) => {
@@ -25,7 +24,7 @@ const Car = ({ color, direction, className }) => {
       carColor = orange
       break
     default:
-      carColor = none
+      carColor = blue
   }
 
   return (
