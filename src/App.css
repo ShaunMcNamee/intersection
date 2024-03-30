@@ -125,7 +125,7 @@
   height: 365px;
   width: 305px;
   display: grid;
-  grid-template-columns: [sb-none] 35px [sb-straight-1] 35px [sb-straight-2] 35px [nb-left-turn] 35px [nb-left-straight] 35px [nb-right-straight] 35px [nb-right-turn] 35px ;
+  grid-template-columns: [sb-none] 35px [sb-straight-2] 35px [sb-straight-1] 35px [nb-left-turn] 35px [nb-left-straight] 35px [nb-right-straight] 35px [nb-right-turn] 35px ;
   grid-template-rows: [nb-car-0] 65px [nb-car-1] 65px [nb-car-2] 65px [nb-car-3] 65px [nb-car-4] 65px;
   gap: 10px;
 }
@@ -181,7 +181,7 @@
   width: 365px;
   display: grid;
   grid-template-columns: [eb-car-4] 65px [eb-car-3] 65px [eb-car-2] 65px [eb-car-1] 65px [eb-car-0] 65px;
-  grid-template-rows: [wb-none] 35px [wb-straight-1] 35px [wb-straight-2] 35px [eb-left-turn] 35px [eb-left-straight] 35px [eb-right-straight] 35px [eb-right-turn] 35px ;
+  grid-template-rows: [wb-none] 35px [wb-straight-2] 35px [wb-straight-1] 35px [eb-left-turn] 35px [eb-left-straight] 35px [eb-right-straight] 35px [eb-right-turn] 35px ;
   gap: 10px;
 }
 

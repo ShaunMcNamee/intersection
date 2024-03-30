@@ -8,6 +8,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="south"
                 className={`sb-right-turn sb-car-${index}`}
@@ -21,6 +22,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="south"
                 className={`sb-right-straight sb-car-${index}`}
@@ -34,6 +36,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="south"
                 className={`sb-left-straight sb-car-${index}`}
@@ -47,6 +50,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="south"
                 className={`sb-left-turn sb-car-${index}`}
@@ -60,6 +64,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="north"
                 className={`nb-straight-1 sb-car-${index}`}
@@ -73,6 +78,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="north"
                 className={`nb-straight-2 sb-car-${index}`}
@@ -89,6 +95,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="east"
                 className={`eb-right-turn eb-car-${index}`}
@@ -102,6 +109,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="east"
                 className={`eb-right-straight eb-car-${index}`}
@@ -115,6 +123,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="east"
                 className={`eb-left-straight eb-car-${index}`}
@@ -128,6 +137,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="east"
                 className={`eb-left-turn eb-car-${index}`}
@@ -141,6 +151,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="west"
                 className={`wb-straight-1 eb-car-${index}`}
@@ -154,6 +165,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="west"
                 className={`wb-straight-2 eb-car-${index}`}
@@ -170,6 +182,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="west"
                 className={`wb-right-turn wb-car-${index}`}
@@ -183,6 +196,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="west"
                 className={`wb-right-straight wb-car-${index}`}
@@ -196,6 +210,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="west"
                 className={`wb-left-straight wb-car-${index}`}
@@ -209,6 +224,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="west"
                 className={`wb-left-turn wb-car-${index}`}
@@ -222,6 +238,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="east"
                 className={`eb-straight-1 wb-car-${index}`}
@@ -235,6 +252,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="east"
                 className={`eb-straight-2 wb-car-${index}`}
@@ -251,6 +269,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="north"
                 className={`nb-right-turn nb-car-${index}`}
@@ -264,6 +283,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="north"
                 className={`nb-right-straight nb-car-${index}`}
@@ -277,6 +297,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="north"
                 className={`nb-left-straight nb-car-${index}`}
@@ -290,6 +311,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="north"
                 className={`nb-left-turn nb-car-${index}`}
@@ -303,6 +325,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="south"
                 className={`sb-straight-1 nb-car-${index}`}
@@ -316,6 +339,7 @@ const Lanes = ({ laneData }) => {
           if (car.id !== undefined) {
             return (
               <Car
+                key={car.id}
                 color={car.color}
                 direction="south"
                 className={`sb-straight-2 nb-car-${index}`}

@@ -3,6 +3,7 @@ const Stoplight = ({ stoplightData }) => {
     <div className="stoplights">
       {stoplightData.north.map((color, index) => (
         <div
+          key={`north-${index}`}
           style={{
             backgroundColor: color,
             gridColumn: 4 - index,
@@ -12,6 +13,7 @@ const Stoplight = ({ stoplightData }) => {
       ))}
       {stoplightData.east.map((color, index) => (
         <div
+          key={`east-${index}`}
           style={{
             backgroundColor: color,
             gridColumn: 7,
@@ -21,6 +23,7 @@ const Stoplight = ({ stoplightData }) => {
       ))}
       {stoplightData.south.map((color, index) => (
         <div
+          key={`south-${index}`}
           style={{
             backgroundColor: color,
             gridColumn: index + 4,
@@ -30,6 +33,7 @@ const Stoplight = ({ stoplightData }) => {
       ))}
       {stoplightData.west.map((color, index) => (
         <div
+          key={`west-${index}`}
           style={{
             backgroundColor: color,
             gridColumn: 1,
